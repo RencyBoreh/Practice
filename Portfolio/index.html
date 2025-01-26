@@ -11,210 +11,393 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-  <nav class="navbar mb-5 bg-primary navbar-light fixed-top d-flex  justify-content-end navbar-expand-sm" >
- <div class="fluid-container">
-  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse1">
-  <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapse1">
-    <ul class="navbar-nav">
-      <li class="nav-item"><a href="#" class="navbar-brand nav-link"><img src="/images/r-logo-removebg-preview.png" alt="" style="width: 40px;"></a></li>
-      <li class="nav-item"><a href="#home" class="nav-link text-light">Home</a></li>
-      <li class="nav-item"><a href="#about" class="nav-link text-light">About</a></li>
-      <li class="nav-item"><a href="#projects" class="nav-link text-light">Projects</a></li>
-      <li class="nav-item"><a href="#skills" class="nav-link text-light">Skills</a></li>
-      <li class="nav-item"><a href="#contact" class="nav-link text-light">Contact</a></li>
-      <li class="nav-item dropdown">
+
+  <nav class="navbar mb-5 bg-primary navbar-light fixed-top navbar-expand-sm">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <img src="/images/r-logo-removebg-preview.png" alt="Logo" style="width: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a href="#home" class="nav-link text-light">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link text-light">About</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link text-light">Projects</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link text-light">Skills</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link text-light">Contact</a></li>
+          <li class="nav-item dropdown">
             <a href="#services" class="dropdown-toggle nav-link text-light" data-bs-toggle="dropdown">Services</a>
             <ul class="dropdown-menu bg-primary">
-              <li><a href="#" class="dropdown-item">Service1</a></li>
-              <li><a href="#" class="dropdown-item">Service2</a></li>
-              <li><a href="#" class="dropdown-item">Service3</a></li>
-              <li><a href="#" class="dropdown-item">Service4</a></li>
+              <li><a href="#webdev" class="dropdown-item">Web Dev</a></li>
+              <li><a href="#design" class="dropdown-item">Design</a></li>
+              <li><a href="#database" class="dropdown-item">Databases</a></li>
+              <li><a href="#analysis" class="dropdown-item">Analysis</a></li>
+              <li><a href="#support" class="dropdown-item">Support</a></li>
             </ul>
-      </li>
-    </ul>
-  </div>
- 
- </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
-  <div class="container-fluid d-flex bg-light mt-5 pt-3" id="home" style="height: 80vh;">
-<!-- <h1>HOME PAGE</h1> -->
-    <div class="container order-2 align-content-center">
-      <img src="/images/image1-removebg-preview.png" alt="" style="width: 100%;">
-    </div>
-    <div class="container d-flex-column align-content-center ps-5">
-      <div class="container">
-        <h1>HI, I'm <span class="text-primary">RENCY</span> a <span class="text-primary">Web Developer</span> & <span class="text-primary">Data Analyst</span> with a passion for creating innovative solutions and extracting meaningful isights from data.</h1>
+  <div class="container-fluid bg-light mt-5 pt-3" id="home" style="height: 80vh;">
+    <div class="row">
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-start order-2 order-md-1 ps-md-5 mt-5 pt-4">
+        <h1 class='text-secondary'>HI, I'm <span class="text-primary">RENCY</span> a <span class="text-primary">Web Developer</span> & <span class="text-primary">Data Analyst</span> with a passion for creating innovative solutions and extracting meaningful insights from data.</h1>
+        <div class="mt-5">
+          <a href="#projects"><button class="btn btn-primary my-3">View My Work</button></a>
+          <a href="#contact"><button class="btn btn-primary">Get in Touch</button></a>
+        </div>
       </div>
-      
-      <div class="container d-flex-column mt-5">
-        <button class="btn btn-primary my-3 ">View My Work</button>
-       <button class="btn btn-primary ">Get in Touch</button>
+      <div class="col-md-6 d-flex align-items-center justify-content-center order-1 order-md-2">
+        <img src="/images/image1-removebg-preview.png" alt="Image" class="img-fluid">
       </div>
-       
     </div>
   </div>
+  
 
-
-  <!-- ABOUT PAGE -->
-  <div class="container-fluid d-inline flex-wrap bg-light mt-2" id="about" style="height: 100vh;">
-    <div class="container bg-primary d-flex  " style="height: 100%;">
-      <div class="container-fluid">
-        <h1>About</h1>
-        <p>Hello! My name is RENCY, and I'm a passionate Software Engineer from Kenya. I embarked on my journey in technology at Kirinyaga University, where I pursued a degree in Software Engineering. My education provided a solid foundation in various aspects of software development, from creating dynamic websites to analyzing data.</p>
-      </div>
-      <div class="card me-3">
-        <div class="card-header"><h2 class="text-primary">About Me</h2></div>
-        <div class="card-body" style="height: 100%;">
-          <div class="card-text">Hello! My name is RENCY, and I'm a passionate Software Engineer from Kenya. I embarked on my journey in technology at Kirinyaga University, where I pursued a degree in Software Engineering. My education provided a solid foundation in various aspects of software development, from creating dynamic websites to analyzing data.</div>
-        </div>
-       </div>
-        <div class="card me-3 bg-light" style="height: 100%;">
-          <div class="card-header"><h2 class="text-primary">My Journey</h2></div>
+ <!-- ABOUT PAGE -->
+<div class="container-fluid bg-light mt-2" id="about">
+  <div class="container pt-4 pb-4">
+    <h1 class="text-secondary pb-4 text-center">About</h1>
+    <div class="row">
+      <!-- Section 1: About Me -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-light">
+            <h2 class="text-light text-center">About Me</h2>
+          </div>
+          <div class="card-img-top">
+            <img src="/images/image1-removebg-preview.png" alt="myimage">
+          </div>
           <div class="card-body">
-            <div class="card-text"><p>My journey into the world of technology began with a curiosity about how things work and a desire to create solutions that can make a difference. At Kirinyaga University, I honed my skills in software engineering, focusing on both front-end and back-end development. I became proficient in creating websites using HTML, CSS, JavaScript, and Bootstrap, which allowed me to bring ideas to life with engaging and interactive designs.</p>
-            </div>
-        </div> 
-        </div>
-        <div class="card me-3 bg-light" style="height: 100%;">
-          <div class="card-header"><h2 class="text-primary">My Bio</h2></div>
-          <div class="card-body">
-            <div class="card-text"><p>In addition to web development, I developed a strong interest in databases, mastering MySQL to manage and organize data efficiently. My curiosity didn't stop there; I delved into UI/UX design, learning how to create user-friendly interfaces that enhance the user experience. My passion for data led me to explore data analysis, where I gained skills in Python, Power BI, Excel, and SQL to uncover insights and make data-driven decisions.</p></div>
+            <p class="card-text">
+              Hello! My name is RENCY, and I'm a passionate Software Engineer from Kenya. I embarked on my journey in technology at Kirinyaga University, where I pursued a degree in Software Engineering. My education provided a solid foundation in various aspects of software development, from creating dynamic websites to analyzing data.
+            </p>
           </div>
         </div>
-        <div class="card me-3 bg-light" style="height: 100%;">
-          <div class="card-header"><h2 class="text-primary">Passions</h2></div>
+      </div>
+      <!-- Section 2: My Journey -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-light">
+            <h2 class="text-light text-center">My Journey</h2>
+          </div>
+          <div class="card-img-top">
+            <img src="/images/image1-removebg-preview.png" alt="myimage">
+          </div>
           <div class="card-body">
-            <div class="card-text"><p>I am deeply passionate about technology and its potential to drive positive change. I thrive on challenges and constantly seek opportunities to learn and grow. Whether it's developing a new website, designing intuitive interfaces, or analyzing complex data sets, I find joy in every step of the process.</p></div>
+            <p class="card-text">
+              My journey into the world of technology began with a curiosity about how things work and a desire to create solutions that can make a difference. At Kirinyaga University, I honed my skills in software engineering, focusing on both front-end and back-end development. I became proficient in creating websites using HTML, CSS, JavaScript, and Bootstrap, which allowed me to bring ideas to life with engaging and interactive designs.
+            </p>
           </div>
         </div>
-           <div class="card bg-light" style="height: 100%;">
-            <div class="card-header"><h2 class="text-primary">What Makes Me Unique??</h2></div>
-            <div class="card-body">
-              <div class="card-text"> <p>What sets me apart is my diverse skill set and my commitment to continuous improvement. I believe in the power of collaboration and always strive to bring a unique perspective to every project. My ability to blend technical expertise with creative problem-solving allows me to create innovative solutions that meet user needs and exceed expectations.</p></div>
-            </div>
-           </div>
+      </div>
     </div>
-     
-      
-  </div>
-  <div class="container-fluid  bg-light mt-2" id="projects" style="height: 100vh;">
-    <!-- <h2>PROJECTS PAGE</h2> -->
-     <div class="container d-flex bg-primary my-3" style="height: 100%;">
-      <div class="container bg-success me-3">
-        <div class="card mt-1">
-          <div class="card-header">Project</div>
-          <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptas illo doloribus animi repudiandae cupiditate dignissimos optio est molestias, tenetur, doloremque voluptates vitae dolor harum sint velit eos exercitationem dolore?</div>
+    <div class="row">
+      <!-- Section 5: What Makes Me Unique -->
+      <div class="col-md-12 mb-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-light">
+            <h2 class="text-light text-center">What Makes Me Unique?</h2>
+          </div>
+          
+          <div class="card-body">
+            <p class="card-text">
+              What sets me apart is my diverse skill set and my commitment to continuous improvement. I believe in the power of collaboration and always strive to bring a unique perspective to every project. My ability to blend technical expertise with creative problem-solving allows me to create innovative solutions that meet user needs and exceed expectations.
+            </p>
+          </div>
         </div>
-        <!-- <h2 class="text-primary">Project 1</h2> -->
       </div>
-      <div class="container  bg-info">
-        <div class="card mt-1">
-          <div class="card-header">Project</div>
-          <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptas illo doloribus animi repudiandae cupiditate dignissimos optio est molestias, tenetur, doloremque voluptates vitae dolor harum sint velit eos exercitationem dolore?</div>
+    <div class="row">
+      <!-- Section 3: My Bio -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-light">
+            <h2 class="text-light text-center">My Bio</h2>
+          </div>
+          <div class="card-img-top">
+            <img src="/images/database.jpg" alt="myimage" style="width:100%;height: 150px;">
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              In addition to web development, I developed a strong interest in databases, mastering MySQL to manage and organize data efficiently. My curiosity didn't stop there; I delved into UI/UX design, learning how to create user-friendly interfaces that enhance the user experience. My passion for data led me to explore data analysis, where I gained skills in Python, Power BI, Excel, and SQL to uncover insights and make data-driven decisions.
+            </p>
+          </div>
         </div>
-        <!-- <h2 class="text-primary">Project 2</h2></div> -->
-     </div>
-     <div class="container bg-danger my-3 d-flex">
-      <div class="container bg-info me-3"><h2 class="text-primary">Project 3</h2></div>
-      <div class="container bg-success">
-        <h2 class="text-primary">Project 4</h2>
       </div>
-     </div>
-     
-     <!-- <div class="container"><h1>Hi</h1></div> -->
+      <!-- Section 4: Passions -->
+      <div class="col-md-6 mb-4">
+        <div class="card h-100">
+          <div class="card-header bg-primary text-light">
+            <h2 class="text-light text-center">Passions</h2>
+          </div>
+          <div class="card-img-top">
+            <img src="/images/passion2.jpg" alt="myimage" style="width:100%;height: 150px;">
+          </div>
+          <div class="card-body">
+            <p class="card-text">
+              I am deeply passionate about technology and its potential to drive positive change. I thrive on challenges and constantly seek opportunities to learn and grow. Whether it's developing a new website, designing intuitive interfaces, or analyzing complex data sets, I find joy in every step of the process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    </div>
   </div>
+</div>
+
+<!-- PROJECTS PAGE -->
+<div class="container-fluid bg-light mt-2" id="projects" style="min-height: 100vh;">
+  <div class="container pt-4 pb-4">
+    <h1 class="text-secondary mb-4 text-center">Projects</h1>
+    <div class="row my-3">
+      <!-- Project 1 -->
+      <div class="col-md-6 mb-4">
+        <div class="bg-success p-4 text-light h-100">
+          <h2 class="text-center">Project 1</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptas illo doloribus animi repudiandae cupiditate dignissimos optio est molestias, tenetur, doloremque voluptates vitae dolor harum sint velit eos exercitationem dolore?</p>
+          <a href="#"></a><button class="btn btn-success mx-5">See Project</button></a>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-6 mb-4">
+        <div class="bg-info p-4 text-light h-100">
+          <h2 class="text-center">Project 2</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptas illo doloribus animi repudiandae cupiditate dignissimos optio est molestias, tenetur, doloremque voluptates vitae dolor harum sint velit eos exercitationem dolore?</p>
+          <a href="#"></a><button class="btn btn-success mx-5">See Project</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="row my-3">
+      <!-- Project 3 -->
+      <div class="col-md-6 mb-4">
+        <div class="bg-danger p-4 text-light h-100">
+          <h2 class="text-center">Project 3</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptas illo doloribus animi repudiandae cupiditate dignissimos optio est molestias, tenetur, doloremque voluptates vitae dolor harum sint velit eos exercitationem dolore?</p>
+          <a href="#"></a><button class="btn btn-success mx-5">See Project</button></a>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="col-md-6 mb-4">
+        <div class="bg-success p-4 text-light h-100">
+          <h2 class="text-center">Project 4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque voluptas illo doloribus animi repudiandae cupiditate dignissimos optio est molestias, tenetur, doloremque voluptates vitae dolor harum sint velit eos exercitationem dolore?</p>
+          <a href="#"></a><button class="btn btn-success mx-5">See Project</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="container-fluid d-flex align-content-center bg-white mt-2" id="skills"style="height: 100vh;">
-      <div class="container-fluid bg-success">
-        <div class="container mt-3 d-block bg-primary text-center">
-          <h1 class="text-light">MY SKILLS</h1>
+      <div class="container-fluid bg-light">
+        <div class="container mt-3 d-block  text-center">
+          <h1 class="text-secondary">MY SKILLS</h1>
         </div>
-        <div class="container mt-5 bg-warning d-flex">
-          <div class="container me-2 bg-danger">
-            <h2>Web Development</h2>
-            <span class="text-light">HTML:</span><div class="progress">
+        <div class="container mt-5  d-flex">
+          <div class="container me-2 bg-light">
+            <h2 class="text-primary">Web Development</h2>
+            <span>HTML:</span><div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%;">95%</div>
             </div>
-            <span class="text-light">CSS:</span><div class="progress">
+            <span >CSS:</span><div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%;">90%</div>
             </div>
-            <span class="text-light">JavaScript:</span><div class="progress">
+            <span >JavaScript:</span><div class="progress">
               <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%;">70%</div>
             </div>
-            <span class="text-light">Bootstrap:</span><div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%;">75%</div>
+            <span>Bootstrap:</span><div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 75%;">75%</div>
             </div>
           </div>
-          <div class="container bg-info">
-            <h2>Data Analytics</h2>
-            <span class="text-light">Python:</span>
+          <div class="container bg-light">
+            <h2 class="text-primary">Data Analytics</h2>
+            <span>Python:</span>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%;">75%</div>
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 75%;">75%</div>
             </div>
-            <span class="text-light">SQL:</span>
+            <span>SQL:</span>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%;">90%</div>
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 90%;">90%</div>
             </div>
-            <span class="text-light">PowerBi:</span>
+            <span>PowerBi:</span>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%;">90%</div>
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 90%;">90%</div>
             </div>
-            <span class="text-light">Excel:</span>
+            <span>Excel:</span>
             <div class="progress">
-              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%;">95%</div>
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 95%;">95%</div>
             </div>
           </div>  
       </div>
       <div class="container mt-4 d-block bg-light my-3 py-2 text-center">
-        <h2>UI/UX Design</h2>
+        <h2 class="text-primary">UI/UX Design</h2>
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%;">95%</div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width: 95%;">95%</div>
         </div>
       </div>
       <div class="container mt-4 d-block bg-light my-3 py-2 text-center">
-        <h2>DataBase Management</h2>
-        <span class="text-light">SQL:</span>
+        <h2 class="text-primary">DataBase Management</h2>
+        <span class="text-light">MYSQL:</span>
         <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%;">90%</div>
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 90%;">90%</div>
         </div>
       </div>
     </div>
     <!-- <h2>SKILLS PAGE</h2> -->
   </div>
-  <div class="container-fluid bg-light mt-2" id="contact" style="height: 100vh;">
+ <!-- CONTACT PAGE -->
+<div class="container-fluid bg-light mt-2" id="contact" style="min-height: 100vh;">
+  <div class="container text-center py-4">
+    <h2 class="text-secondary">CONTACT ME</h2>
+    <div class="container text-start pb-4">
+      <form>
+        <div class="mb-3">
+          <label for="names" class="form-label"><h3>NAME:</h3></label>
+          <input type="text" id="names" class="form-control" placeholder="Enter your name...">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label"><h3>EMAIL:</h3></label>
+          <input type="email" id="email" class="form-control" placeholder="Enter your email...">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label"><h3>MESSAGE:</h3></label>
+          <textarea id="message" class="form-control" rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+        <button class="btn btn-primary" data-bs-toggle="popover" title="Confirmation" data-bs-trigger="focus" data-bs-content="Message Sent">Send Message</button>
+      </form>
+    </div>
     
-    <div class="container text-center">
-      <h2>CONTACT PAGE</h2>
-      <div class="container text-start pb-4 bg-danger">
-        <!-- <h3>NAME: <span class="text-primary">RENCY JEPTANUI</span></h3>
-        <h3>EMAIL: <span class="text-primary"><a href="mailto:jeptanuirency313@gmail.com">jeptanuirency313@gmail.com</a></span></h3> -->
-        <form>
-          <h3><label for="names">NAME:</label></h3>
-          <h4><input type="text" id="names" placeholder="name..."></h4>
-          <h3><label for="email">EMAIL:</label></h3>
-          <h4><input type="email" name="email" id="email" placeholder="email..."></h4>
-          <h3><label for="message">MESSAGE:</label></h3>
-          <textarea name="" id="message" cols="30" rows="10" class="pt-1 px-2">Write Your Message here.....</textarea><br>
-          <button class="btn btn-primary">Send Message</button>
-        </form>
+    <!-- <div class="container mt-3">
+      <div class="row">
+        <div class="col-md-3 col-6 mb-2">
+          <a href="#" class="text-decoration-none">
+            <img src="/images/whatsapp.jpg" alt="WhatsApp" style="width: 40px;">
+            <span class="text-light ms-1">WhatsApp</span>
+          </a>
+        </div>
+        <div class="col-md-3 col-6 mb-2">
+          <a href="#" class="text-decoration-none">
+            <img src="/images/whatsapp.jpg" alt="WhatsApp" style="width: 40px;">
+            <span class="text-dark ms-1">WhatsApp</span>
+          </a>
+        </div>
+        <div class="col-md-3 col-6 mb-2">
+          <a href="#" class="text-decoration-none">
+            <img src="/images/whatsapp.jpg" alt="WhatsApp" style="width: 40px;">
+            <span class="text-dark ms-1">WhatsApp</span>
+          </a>
+        </div>
+        <div class="col-md-3 col-6 mb-2">
+          <a href="#" class="text-decoration-none">
+            <img src="/images/whatsapp.jpg" alt="WhatsApp" style="width: 40px;">
+            <span class="text-dark ms-1">WhatsApp</span>
+          </a>
+        </div>
       </div>
-      <div class="container-fluid  mt-1 bg-primary">
-        <!-- <h1>hi</h1> -->
-        <a href="#"><img src="/images/whatsapp.jpg" alt="" style="width: 40px;"><span class="text-light ms-1">Whatsapp</span></a>
-        <a href="#"><img src="/images/whatsapp.jpg" alt="" style="width: 40px;"><span class="text-dark ms-1">Whatsapp</span></a>
-        <a href="#"><img src="/images/whatsapp.jpg" alt="" style="width: 40px;"><span class="text-dark ms-1">Whatsapp</span></a>
-        <a href="#"><img src="/images/whatsapp.jpg" alt="" style="width: 40px;"><span class="text-dark ms-1">Whatsapp</span></a>
+    </div> -->
+  </div>
+</div>
+
+<!-- SERVICES PAGE -->
+<div class="container-fluid bg-white mt-2" id="services" style="min-height: 100vh;">
+  <h2 class="text-center text-secondary py-4">SERVICES</h2>
+  <div class="container">
+    <!-- Service 1: Web Development -->
+    <div class="row my-4">
+      <div class="col-md-6 mb-4">
+        <div class="p-4 bg-light h-100" id="webdev">
+          <h2 class="text-primary">Web Development</h2>
+          <p><span class="text-muted">Creating Visually Stunning and Highly Functional Websites.</span> I specialize in building responsive and dynamic websites using the latest web technologies. Whether you need a simple landing page or a complex web application, I can bring your vision to life. My web development services include:</p>
+          <ul>
+            <li>Custom website design and development</li>
+            <li>HTML, CSS, JavaScript, and Bootstrap integration</li>
+            <li>Responsive design for mobile and desktop</li>
+            <li>Website maintenance and updates</li>
+          </ul>
+          <a href="#contact"><button class="btn btn-primary">Request for Web Development</button>
+          </a>
+        </div>
+      </div>
+      <!-- Service 2: UI/UX Design -->
+      <div class="col-md-6 mb-4">
+        <div class="p-4 bg-light h-100" id="design">
+          <h2 class="text-primary">UI/UX Design</h2>
+          <p><span class="text-muted">Crafting User-Centric and Intuitive Interfaces</span> With a keen eye for design and a deep understanding of user behavior, I create interfaces that are not only visually appealing but also highly intuitive. My UI/UX design services include:</p>
+          <ul>
+            <li>User research and personas</li>
+            <li>Wireframing and prototyping</li>
+            <li>High-fidelity mockups</li>
+            <li>Usability testing and iteration</li>
+          </ul>
+          <a href="#contact"><button class="btn btn-primary">Request for Design</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Service 3: Database Management -->
+    <div class="row my-4 justify-content-center">
+      <div class="col-md-6 mb-4">
+        <div class="p-4 bg-light h-100" id="database">
+          <h2 class="text-primary text-center">Database Management</h2>
+          <p><span class="text-muted">Efficiently Organizing and Managing Your Data.</span> I offer robust database management solutions to help you store, organize, and retrieve your data efficiently. My database management services include:</p>
+          <ul class='text-start'>
+            <li>Database design and architecture</li>
+            <li>MySQL database setup and maintenance</li>
+            <li>Data migration and integration</li>
+            <li>Performance optimization and security</li>
+          </ul>
+          <a href="#contact"><button class="btn btn-primary">Request for Database Management</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Service 4: Data Analysis and Technical Consulting -->
+    <div class="row my-4">
+      <div class="col-md-6 mb-4">
+        <div class="p-4 bg-light h-100" id="analysis">
+          <h2 class="text-primary">Data Analysis</h2>
+          <p><span class="text-muted">Transforming Data into Actionable Insights</span> Using advanced data analysis techniques, I help you uncover valuable insights from your data to drive informed decision-making. My data analysis services include:</p>
+          <ul>
+            <li>Data cleaning and preprocessing</li>
+            <li>Data visualization with Power BI and Excel</li>
+            <li>Statistical analysis and reporting</li>
+            <li>Data-driven strategy development</li>
+          </ul>
+          <a href="#contact"><button class="btn btn-primary">Request for Data Analysis</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="p-4 bg-light h-100" id="support">
+          <h2 class="text-primary">Technical Consulting</h2>
+          <p><span class="text-muted">Providing Expert Guidance and Solutions</span> With my extensive knowledge in software engineering and technology, I offer consulting services to help you tackle technical challenges and achieve your goals. My consulting services include:</p>
+          <ul>
+            <li>Technology strategy and planning</li>
+            <li>System architecture and design</li>
+            <li>Code reviews and best practices</li>
+            <li>Troubleshooting and support</li>
+          </ul>
+          <a href="#contact"><button class="btn btn-primary">Request for Tech Consultation</button>
+          </a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid bg-white mt-2" id="services" style="height: 100vh;">
-    <h2>SERVICE PAGE</h2>
-  </div>
+</div>
+
 <footer class="bg-dark text-light text-center py-3">
-  
+   <!-- Contact Details -->
+   <!-- <div class="col-md-6 mb-4"> -->
+    <h3 class="text-primary">Get in Touch</h3>
+    <p><strong>Email:</strong> <a href="mailto:jeptanuirency313@gmail.com" class="text-light">jeptanuirency313@gmail.com</a></p>
+    <p><strong>Phone:</strong> +254716182160</p>
+    <p><strong>Address:</strong> 143-10300, Kerugoya, Kenya.</p>
+  <a href="#" class="text-light">Twitter</a> | <a href="#" class=" text-light">LinkedIn</a> | <a href="#" class=" text-light">GitHub</a>|<a href="mailto:jeptanuirency313@gmail.com" class="text-light"> Email</a>
   <p>&copy; 2025 RencyBoreh. All rights reserved.</p>
-  <a href="#" class="text-light">Twitter</a> | <a href="#" class=" text-light">LinkedIn</a> | <a href="#" class=" text-light">GitHub</a>
 </footer>
 
 </body>
