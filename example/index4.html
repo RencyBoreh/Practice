@@ -128,6 +128,76 @@
       </div>
     
   
- 
+   <form action="">
+    <div class="container-fluid mt-5 px-3">
+      <label for="name" class="form-label">Username:</label>
+      <input type="text" class="form-control" id="name" placeholder="username">
+      <div class="form-check">
+        <label for="check1" class="form-check-label" name="male">Male</label>
+        <input type="radio" name="male" id="check1" class="form-check-input">
+      </div>
+      <div class="form-check">
+        <label for="check2" class="form-check-label" name="male">Female</label>
+        <input type="radio" name="male" id="check2" class="form-check-input">
+      </div>
+      
+    </div>
+    <div class="container mt-4">
+<div class="form-check">
+  <input type="checkbox" class="form-check-input" id="name1">
+  <label for="name1" class="form-check-label">Stay Checked</label>
+</div>
+    </div>
+    <div class="container mt-5 mb-2">
+      <label for="text4">Comment:</label>
+      <textarea name="text" id="" cols="30" rows="10" placeholder="write comment here....." class='form-control' id="text4"></textarea>
+      
+    </div>
+    <label for="comment">Comments:</label>
+    <textarea name="text" id="comment" class="form-control" cols="20" rows="10"></textarea>
+   </form>
+   <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <form action="">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <label for="firstName" class="form-label">FirstName:</label>
+          <input type="text" class='form-control' id="firstName" placeholder="Enter Your Firstname...">
+        </div>
+        <div class="col">
+          <label for="lastName" class="form-label">LastName:</label>
+          <input type="text" class='form-control' id="lastName" placeholder="Enter Your LastName...">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mb-5 mt-5">
+      <select name="select" id="selection" class="form-select">
+        <option value="1">one</option>
+        <option value="2">two</option>
+        <option value="3">three</option>
+        <option value="4">four</option>
+        <option>five</option>
+      </select>
+    </div>
+    <label for="browser" class="form-label">Choose your browser from the list:</label>
+<input class="form-control" list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+<div class="form-check form-switch">
+<input type="checkbox" class="form-check-input" id="myswitch" name="darkmode" value="yes" checked>
+<label for="myswitch" class="form-check-label">DarkMode</label>
+</div>
+  </form>
 </body>
 </html>
