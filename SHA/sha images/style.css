@@ -10,7 +10,7 @@
 } 
  .homebg-text {
           position: absolute;
-          top: 40%;
+          top: 70%;
           left: 50%;
           transform: translate(-100%, -50%);
           text-align: center;
